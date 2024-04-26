@@ -1,0 +1,39 @@
+<%- include("partials/userHeader") -%>
+
+<body>
+  <div class="container-fluid">
+    <div class="container-fluid">
+      <div class="row code-row">
+          <div class="col-lg-8 left-panel ">
+              <div class="editor " style="height: 67vh;">
+                  <textarea  class="editorText" id="editorTextid" spellcheck="false"><%= text %></textarea>
+              </div>
+              
+              <div class="button-spinner-container ">
+                  <button type="button" class="dark-button" id="copyButton" onclick="copyCode()">Copy</button>
+                  <button type="button" class="dark-button" id = "scanButton" onclick="scan('<%= username %>')">Scan</button>
+                  <div class="spinner-border text-primary" role="status" id="spinner" style="display: none;">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+          </div>
+
+        <div class="col-lg-4 red">
+            <div class="side-panel">
+                  <div class="pie-chart-container">
+                    <canvas
+                      id="pie-chart"
+                      class="animate-pie-chart"
+                      width="250"
+                      height="250"
+                    ></canvas>
+                    <ul id="pie-chart-legend"></ul>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="/script.js"></script>
+      
+      <%- include("partials/footer") -%>
+      

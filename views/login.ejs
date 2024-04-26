@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/logo/favicon.png">
+    <title>det-AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="/css/bootstrap-social.css"> -->
+  <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: "IBM Plex Serif", serif;
+            font-weight: 100;
+            font-style: normal;
+            width: 100%;
+        }
+
+        .containera {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .left, .right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .left {
+            background-color: #b7d9db;
+        }
+        .right {
+            background-color: #f5f2eb;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            color: #000000;
+            font-size: 8rem;
+            padding: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #aedddf;
+            color: #000000;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+        }
+
+        .button span {
+            background: #b7d9db;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            width: 100%;
+        }
+
+        .button:hover, .button:active {
+            border: none;
+        }
+
+        .button:active span {
+            background: #d9138a;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            .containera {
+                flex-direction: column;
+                height: auto;
+            }
+            .left, .right {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 5rem;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 20vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="containera">
+        <div class="left">
+            <img src="/logo/brand.png" alt="Website Logo" class="logo" width="80%">
+        </div>
+        <div class="right">
+            <div class=" login">
+  
+                <div class="box">
+                  <form action="/login" method="post" autocomplete="off">
+                      <h2>Sign In</h2>
+                      <div class="inputBox form-group">
+                          <input type="text" required name="username" autocomplete="nope">
+                          <span>Username</span>
+                          <i></i>
+                      </div>
+                      <div class="inputBox form-group">
+                          <input type="password" required name="password" autocomplete="off">
+                          <span>Enter Password</span>
+                          <i></i>
+                      </div>
+                      <input type="submit" value="Login">
+                      <div class="links">
+                          <a href="/forgot">_____</a>
+                          <a href="/register">Sign Up</a>
+                      </div>
+                  </form>
+              </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
