@@ -1,5 +1,5 @@
 Steps for installing the project on a system:
-1. Clone the github repository https://github.com/skv-1180/det-AI-Final 
+1. Clone the github repository https://github.com/skv-1180/det-AI-Final.git
 	git clone https://github.com/skv-1180/det-AI-Final.git
 2. Install nodeJS from the official website:
 	Visit the official Node.js website (https://nodejs.org/)
